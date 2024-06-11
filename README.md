@@ -18,5 +18,3 @@ This project is based on Raspberry Pi 4 &amp; Python language. Whenever person c
 * dlib
 * face-recognition
 
-# Project Demo
-https://user-images.githubusercontent.com/44961536/122524480-cf9dc700-d035-11eb-8dc6-cb487669626d.mp4
