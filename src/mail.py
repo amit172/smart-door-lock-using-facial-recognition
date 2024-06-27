@@ -8,8 +8,8 @@ def SendMail(ImgFileName):
     img_data = open(ImgFileName, 'rb').read()
     msg = MIMEMultipart()
     msg['Subject'] = 'subject'
-    msg['From'] = 'protech2043@gmail.com'
-    msg['To'] = 'gursewaksaggu2043@gmail.com'
+    msg['From'] = 'doorkeeper420@gmail.com'
+    msg['To'] = 'amit1joshi1997@gmail.com'
     text = MIMEText("test")
     msg.attach(text)
     image = MIMEImage(img_data, name=os.path.basename(ImgFileName))
@@ -19,11 +19,11 @@ def SendMail(ImgFileName):
     s.ehlo()
     s.starttls()
     s.ehlo()
-    s.login('protech2043@gmail.com', '********')
+    s.login('doorkeeper420@gmail.com', '********')
     From = msg['From']
     To = msg['To']
     s.sendmail(From, To, msg.as_string())
     s.quit()
 
-FileName = 'ImageBase/Balveer_singh.jpeg'
+FileName = 'ImageBase/Amit Joshi.jpg'
 SendMail(FileName)
